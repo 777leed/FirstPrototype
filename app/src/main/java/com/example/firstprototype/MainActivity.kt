@@ -10,10 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val textView = findViewById<TextView>(R.id.create_acc)
         textView.setOnClickListener{
-            startActivity(Intent ( this@MainActivity,signup::class.java))
+            startActivity(Intent ( this@MainActivity,fm::class.java))
         }
 
 
