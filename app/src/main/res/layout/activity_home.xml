@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -85,23 +85,24 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-
+                android:id="@+id/lessons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp">
+                android:layout_marginLeft="30dp">
 
                 <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="300dp"
+                    android:layout_width="150dp"
+                    android:layout_height="260dp"
                     android:src="@drawable/lessons_01" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="40dp"
+                    android:gravity="center"
                     android:text="Lessons"
-                    android:textColor="#d703082b"
+                    android:textColor="@color/textblackedblue"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
@@ -110,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="70dp"
-                    android:text="12 Courses"
+                    android:text="8 Subjects"
                     android:textColor="#ab03082b"
                     android:textSize="14dp"
                     android:textStyle="bold" />
@@ -124,15 +125,16 @@
                 android:layout_marginRight="10dp">
 
                 <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="300dp"
+                    android:layout_width="150dp"
+                    android:layout_height="260dp"
                     android:src="@drawable/pbg_01" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginLeft="26dp"
                     android:layout_marginTop="40dp"
+                    android:gravity="center"
                     android:text="CodeWar"
                     android:textColor="#d703082b"
                     android:textSize="25dp"
@@ -250,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="40dp"
-                android:text="Check the achievements you unlocked"
+                android:text="Check your achievements"
                 android:textColor="#6003082b"
                 android:textSize="14dp"
                 android:textStyle="bold" />
@@ -258,4 +260,4 @@
         </RelativeLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

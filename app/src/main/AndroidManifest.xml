@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstPrototype">
         <activity
+            android:name=".lessons_c3"
+            android:exported="false" />
+        <activity
+            android:name=".lessons_c2"
+            android:exported="false" />
+        <activity
+            android:name=".pdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lessons_c1"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity

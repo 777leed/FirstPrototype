@@ -37,8 +37,12 @@
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_categories.xml" value="0.2" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_fm.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_home.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_lessons_c1.xml" value="0.19953703703703704" />
+        <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_lessons_c2.xml" value="0.19953703703703704" />
+        <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_lessons_c3.xml" value="0.19953703703703704" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_pdf.xml" value="0.19953703703703704" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_signup.xml" value="0.2" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/hp/Downloads/Compressed/FirstPrototype/app/src/main/res/layout/cardview.xml" value="0.33" />
@@ -63,7 +67,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.2" />
+        <option name="scale" value="0.33" />
       </ProjectState>
     </option>
   </component>
