@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746578207605",
+    "project_id": "firstprototypephoenix",
+    "storage_bucket": "firstprototypephoenix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746578207605:android:86fac5613b90bd4c58293c",
+        "android_client_info": {
+          "package_name": "com.example.firstprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746578207605-mji9oq4b84lgk87peoo5r3ffkgv7nap5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoUewdxNgxVcAsS3TdOZxa7E3dZU86Czw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746578207605-mji9oq4b84lgk87peoo5r3ffkgv7nap5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
