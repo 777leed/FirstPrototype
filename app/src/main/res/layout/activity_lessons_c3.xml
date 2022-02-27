@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_lessons_bg"
-    tools:context=".lessons_c1">
+    tools:context=".lessons.lessons_c3">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_left"

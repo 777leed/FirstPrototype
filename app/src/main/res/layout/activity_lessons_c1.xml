@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_lessons_bg"
-    tools:context=".lessons_c1">
+    tools:context=".lessons.lessons_c1">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_left"
@@ -43,6 +43,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toTopOf="parent"
         >
+
         <RelativeLayout
             android:id="@+id/python"
             android:layout_width="match_parent"
@@ -95,7 +96,7 @@
             android:background="#DDDDDD" />
 
         <RelativeLayout
-            android:id="@+id/java"
+            android:id="@+id/javaR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"

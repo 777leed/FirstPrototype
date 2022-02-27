@@ -1,4 +1,4 @@
-package com.example.firstprototype
+package com.example.firstprototype.User
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,29 +8,32 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.firstprototype.R
+import com.example.firstprototype.choose.Categories
+import com.example.firstprototype.fytb
+import com.example.firstprototype.home
+import com.example.firstprototype.pyslide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var auth: FirebaseAuth;
 
+    private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         auth = Firebase.auth
-
         val textView = findViewById<TextView>(R.id.create_acc)
         val btn_login = findViewById<Button>(R.id.btn_signin)
 
         textView.setOnClickListener{
-            startActivity(Intent ( this@MainActivity,signup::class.java))
+            startActivity(Intent ( this@MainActivity, signup::class.java))
         }
         btn_login.setOnClickListener {
             doLogin()
         }
-
 
     }
 
@@ -80,6 +83,7 @@ class MainActivity : AppCompatActivity() {
             if(currentUser.isEmailVerified) {
                 startActivity(Intent(this, home::class.java))
                 finish()
+
             }else{
                 Toast.makeText(
                     baseContext, "Please verify your email address.",

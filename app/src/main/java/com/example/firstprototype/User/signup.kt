@@ -1,17 +1,18 @@
-package com.example.firstprototype
+package com.example.firstprototype.User
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.*
-import com.google.android.material.textfield.TextInputEditText
+import com.example.firstprototype.R
 import com.google.firebase.auth.FirebaseAuth
 
 class signup : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_signup)
         auth = FirebaseAuth.getInstance()
         val btn_signup = findViewById<Button>(R.id.button_started)
@@ -55,7 +56,7 @@ class signup : AppCompatActivity() {
                         }
                 } else {
                     Toast.makeText(
-                        baseContext, "Sign Up failed. Try again after some time.",
+                        baseContext, "Sign Up failed. Try again Later.",
                         Toast.LENGTH_SHORT
                     ).show()
                 }

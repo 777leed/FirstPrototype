@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FirstPrototype" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.FirstPrototype" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/orangeRed</item>
         <item name="colorPrimaryVariant">@color/orangeRed</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -20,4 +20,9 @@
     <style name="Theme.FirstPrototype.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.FirstPrototype.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="STATabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

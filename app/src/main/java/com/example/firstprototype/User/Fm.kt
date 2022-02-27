@@ -1,13 +1,12 @@
-package com.example.firstprototype
+package com.example.firstprototype.User
 
-import android.app.UiModeManager.MODE_NIGHT_NO
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.core.view.isVisible
+import com.example.firstprototype.R
 import com.ramotion.fluidslider.FluidSlider
 
 class fm : AppCompatActivity() {

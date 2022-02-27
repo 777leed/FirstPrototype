@@ -10,25 +10,69 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstPrototype">
         <activity
-            android:name=".lessons_c3"
+            android:name=".pyslide"
             android:exported="false" />
         <activity
-            android:name=".lessons_c2"
+            android:name=".jv"
             android:exported="false" />
         <activity
-            android:name=".pdfActivity"
+            android:name=".py"
             android:exported="false" />
         <activity
-            android:name=".lessons_c1"
+            android:name=".lists.list8"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list7"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list6"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list5"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list4"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list3"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list2"
+            android:exported="false" />
+        <activity
+            android:name=".lists.list1"
+            android:exported="false" />
+        <activity
+            android:name=".choose.choose_1"
+            android:exported="false" />
+        <activity
+            android:name=".lists.listView1"
+            android:exported="false" />
+        <activity
+            android:name=".listview_1"
+            android:exported="false"
+            android:label="@string/title_activity_listview1"
+            android:theme="@style/Theme.FirstPrototype.NoActionBar" />
+        <activity
+            android:name=".lessons.lessons_c3"
+            android:exported="false" />
+        <activity
+            android:name=".lessons.lessons_c2"
+            android:exported="false" />
+        <activity
+            android:name=".pdf.pdfActivity_1"
+            android:exported="false" />
+        <activity
+            android:name=".lessons.lessons_c1"
             android:exported="false" />
         <activity
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".fm"
+            android:name=".User.fm"
             android:exported="false" />
         <activity
-            android:name=".splash"
+            android:name=".animation.splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,13 +86,13 @@
             android:label="@string/title_activity_age"
             android:theme="@style/Theme.FirstPrototype.NoActionBar" />
         <activity
-            android:name=".signup"
+            android:name=".User.signup"
             android:exported="false" />
         <activity
-            android:name=".Categories"
+            android:name=".choose.Categories"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".User.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

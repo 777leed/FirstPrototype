@@ -1,11 +1,12 @@
-package com.example.firstprototype
+package com.example.firstprototype.lists
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstprototype.R
 
-class lessons_c3 : AppCompatActivity() {
+class list1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lessons_c3)
+        setContentView(R.layout.activity_list1)
     }
 }
