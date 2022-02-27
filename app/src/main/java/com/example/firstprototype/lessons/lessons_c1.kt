@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.RelativeLayout
 import com.example.firstprototype.R
 import com.example.firstprototype.pdf.pdfActivity_1
+import com.example.firstprototype.pyslide
 
 class lessons_c1 : AppCompatActivity() {
     lateinit var src : String
@@ -16,7 +17,7 @@ class lessons_c1 : AppCompatActivity() {
         val r2 = findViewById<RelativeLayout>(R.id.javaR)
 
         relativeLayout.setOnClickListener{
-            startActivity(Intent ( this@lessons_c1, pdfActivity_1::class.java))
+            startActivity(Intent ( this@lessons_c1, pyslide::class.java))
         }
         r2.setOnClickListener{
             startActivity(Intent ( this@lessons_c1, pdfActivity_1::class.java))
