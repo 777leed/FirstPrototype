@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelsActivity">
+    <include layout="@layout/toolbarlevl"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_quiz_lvl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_forget_pwd_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15.5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="316.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115.5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="216.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl2"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="215.5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="116.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl3"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="315.5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="16.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl4"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15.5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="316.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl5"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115.5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="216.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl6"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="215.5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="116.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl7"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="315.5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="16.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl8"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15.5dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginEnd="316.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl9"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115.5dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginEnd="216.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="215.5dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginEnd="116.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl11"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="315.5dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginEnd="16.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl12"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15.5dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginEnd="316.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl13"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl14"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115.5dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginEnd="216.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl14"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl15"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="215.5dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginEnd="116.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl15"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lvl16"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="315.5dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginEnd="16.5dp"
+                android:background="@drawable/square_levl"
+                android:fontFamily="@font/ptbold"
+                android:gravity="center"
+                android:text="lvl16"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
