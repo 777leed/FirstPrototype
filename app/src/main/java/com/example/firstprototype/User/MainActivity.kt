@@ -8,11 +8,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.firstprototype.R
+import com.example.firstprototype.*
 import com.example.firstprototype.choose.Categories
-import com.example.firstprototype.fytb
-import com.example.firstprototype.home
-import com.example.firstprototype.pyslide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth

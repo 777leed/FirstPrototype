@@ -12,6 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="680dp"
+        android:layout_marginBottom="-22dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle"
+            android:text="Score :"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -300,4 +319,12 @@
     </ScrollView>
 
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="731dp" />
+
+
 </RelativeLayout>
+
