@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstPrototype">
         <activity
+            android:name=".cslide"
+            android:exported="false" />
+        <activity
             android:name=".levels"
             android:exported="false" />
         <activity
@@ -27,11 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".pyslide"
             android:exported="false" />
-
         <activity
             android:name=".lists.list8"
             android:exported="false" />
@@ -59,7 +60,6 @@
         <activity
             android:name=".choose_1"
             android:exported="false" />
-
         <activity
             android:name=".lessons.lessons_c3"
             android:exported="false" />
@@ -78,7 +78,6 @@
         <activity
             android:name=".User.fm"
             android:exported="false" />
-
         <activity
             android:name=".signup"
             android:exported="false" />
