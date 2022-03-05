@@ -17,7 +17,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/btn_profile_image_change"
+            android:id="@+id/tv_pic"
             android:layout_width="129dp"
             android:layout_height="129dp"
             android:layout_alignParentEnd="true"
@@ -27,9 +27,11 @@
             android:clickable="true"
             android:focusable="true"
             android:foregroundGravity="center"
-            android:padding="6dp"/>
+            android:padding="6dp"
+            />
            <!-- android:src="@drawable/camera"-->
         <TextView
+            android:id="@+id/userDisplay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User Name"

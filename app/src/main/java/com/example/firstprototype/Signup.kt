@@ -13,6 +13,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.auth.ktx.userProfileChangeRequest
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CoroutineScope
@@ -93,12 +94,24 @@ class signup : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
+                    val profileUpdates = userProfileChangeRequest {
+                        displayName = username.text.toString()
+                        photoUri = Uri.parse("https://starzplay-img-prod-ssl.akamaized.net/474w/universal/MRROBOTY2015S01E001/MRROBOTY2015S01E001-474x677-PST.jpg")
+                    }
+
+                    user!!.updateProfile(profileUpdates)
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                Log.d(TAG, "User profile updated.")
+                            }
+                        }
                     user?.sendEmailVerification()
                         ?.addOnCompleteListener { task ->
                             if (task.isSuccessful) {
                                 val u = hashMapOf(
                                     "username" to username.text.toString(),
                                     "level" to "1"
+
 
                                 )
 // Add a new document with a generated ID

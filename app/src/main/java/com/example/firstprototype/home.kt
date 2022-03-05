@@ -12,6 +12,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.firstprototype.choose.Categories
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class home : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
@@ -26,12 +28,13 @@ class home : AppCompatActivity() {
     prof.setOnClickListener{
     startActivity(Intent ( this@home,profil::class.java))
 }
-//        val usernameDisplay = findViewById<TextView>(R.id.homeUser)
-//        val u = "PhoenixUser01"
-//        usernameDisplay.text= u
+      val usernameDisplay = findViewById<TextView>(R.id.homeUser)
+        val user = Firebase.auth.currentUser
+        if (user != null) {
+            usernameDisplay.text= user.displayName
+        }
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val navView = findViewById<NavigationView>(R.id.navView)
-        /*toggle = findViewById<Button>(R.id.userIcon)*/
         toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
