@@ -102,7 +102,7 @@
             android:textSize="20dp"
             android:layout_marginLeft="5dp" />
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
