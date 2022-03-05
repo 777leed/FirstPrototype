@@ -1,15 +1,20 @@
 package com.example.firstprototype
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.widget.*
 import com.example.firstprototype.User.MainActivity
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -56,8 +61,9 @@ class signup : AppCompatActivity() {
     }
 
     private fun signUpUser() {
+        val db = Firebase.firestore
         val email = findViewById<EditText>(R.id.email)
-        val password = findViewById<EditText>(R.id.password)
+        val password = findViewById<TextInputLayout>(R.id.password)
         val username = findViewById<EditText>(R.id.username)
         if (email.text.toString().isEmpty()) {
             email.error = "Please enter email"
@@ -70,7 +76,7 @@ class signup : AppCompatActivity() {
             return
         }
 
-        if (password.text.toString().isEmpty()) {
+        if (password.editText?.text.toString().isEmpty()) {
             password.error = "Please enter password"
             password.requestFocus()
             return
@@ -83,13 +89,27 @@ class signup : AppCompatActivity() {
         }
 
 
-        auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+        auth.createUserWithEmailAndPassword(email.text.toString(), password.editText?.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
                     user?.sendEmailVerification()
                         ?.addOnCompleteListener { task ->
                             if (task.isSuccessful) {
+                                val u = hashMapOf(
+                                    "username" to username.text.toString(),
+                                    "level" to "1"
+
+                                )
+// Add a new document with a generated ID
+                                db.collection("users")
+                                    .add(u)
+                                    .addOnSuccessListener { documentReference ->
+                                        Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+                                    }
+                                    .addOnFailureListener { e ->
+                                        Log.w(TAG, "Error adding document", e)
+                                    }
                                 startActivity(Intent(this, MainActivity::class.java))
                                 finish()
                             }

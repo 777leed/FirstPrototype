@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firstprototype" >
+    package="com.example.firstprototype">
 
     <application
         android:allowBackup="true"
@@ -8,19 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FirstPrototype" >
+        android:theme="@style/Theme.FirstPrototype">
         <activity
-            android:name=".nav_header"
+            android:name=".levels"
             android:exported="false" />
+        <activity
+            android:name=".profil"
+            android:exported="false" />
+        <activity
+            android:name=".User.forgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".animation.splashs"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".pyslide"
             android:exported="false" />
-        <activity
-            android:name=".jv"
-            android:exported="false" />
-        <activity
-            android:name=".py"
-            android:exported="false" />
+
         <activity
             android:name=".lists.list8"
             android:exported="false" />
@@ -46,16 +57,9 @@
             android:name=".lists.list1"
             android:exported="false" />
         <activity
-            android:name=".choose.choose_1"
+            android:name=".choose_1"
             android:exported="false" />
-        <activity
-            android:name=".lists.listView1"
-            android:exported="false" />
-        <activity
-            android:name=".listview_1"
-            android:exported="false"
-            android:label="@string/title_activity_listview1"
-            android:theme="@style/Theme.FirstPrototype.NoActionBar" />
+
         <activity
             android:name=".lessons.lessons_c3"
             android:exported="false" />
@@ -74,29 +78,16 @@
         <activity
             android:name=".User.fm"
             android:exported="false" />
-        <activity
-            android:name=".animation.splash"
-            android:exported="true" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
         <activity
-            android:name=".age"
-            android:exported="false"
-            android:label="@string/title_activity_age"
-            android:theme="@style/Theme.FirstPrototype.NoActionBar" />
-        <activity
-            android:name=".User.signup"
+            android:name=".signup"
             android:exported="false" />
         <activity
             android:name=".choose.Categories"
             android:exported="false" />
         <activity
             android:name=".User.MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

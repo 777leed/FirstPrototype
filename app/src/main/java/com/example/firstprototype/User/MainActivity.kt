@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firstprototype.*
-import com.example.firstprototype.choose.Categories
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
@@ -23,15 +23,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         auth = Firebase.auth
         val textView = findViewById<TextView>(R.id.create_acc)
-        val btn_login = findViewById<Button>(R.id.btn_signin)
+        val fpass = findViewById<TextView>(R.id.fpass)
+        val btn_login = findViewById<Button>(R.id.btnSignin)
 
         textView.setOnClickListener{
             startActivity(Intent ( this@MainActivity, signup::class.java))
         }
+        fpass.setOnClickListener{
+            startActivity(Intent ( this@MainActivity, forgotPassword::class.java))
+        }
         btn_login.setOnClickListener {
             doLogin()
         }
-
+//
+//
     }
 
     public override fun onStart() {
@@ -41,9 +46,10 @@ class MainActivity : AppCompatActivity() {
         updateUI(currentUser)
     }
 
+
     private fun doLogin() {
         val username_s = findViewById<EditText>(R.id.username_s)
-        val password_s = findViewById<EditText>(R.id.password_s)
+        val password_s = findViewById<TextInputLayout>(R.id.password_s)
         if (username_s.text.toString().isEmpty()) {
             username_s.error = "Please enter username_s"
             username_s.requestFocus()
@@ -56,13 +62,13 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        if (password_s.text.toString().isEmpty()) {
+        if (password_s.editText?.text.toString().isEmpty()) {
             password_s.error = "Please enter password"
             password_s.requestFocus()
             return
         }
 
-        auth.signInWithEmailAndPassword(username_s.text.toString(),password_s.text.toString())
+        auth.signInWithEmailAndPassword(username_s.text.toString(),password_s.editText?.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser

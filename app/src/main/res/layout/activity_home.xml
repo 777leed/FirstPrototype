@@ -19,13 +19,21 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:background="@drawable/ic_dripp">
+            android:background="@drawable/ic_dripp"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/noob" />
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="161dp"
+                android:layout_marginStart="162dp"
                 android:layout_marginLeft="210dp"
                 android:layout_toEndOf="@+id/hello"
                 android:src="@drawable/ic_cloche" />
@@ -49,7 +57,6 @@
                 android:textColor="@color/white"
                 android:textSize="26dp"
                 android:textStyle="bold" />
-
 
 
             <RelativeLayout

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LevelsActivity">
+    tools:context=".levels">
     <include layout="@layout/toolbarlevl"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_quiz_lvl_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
         android:layout_width="match_parent"

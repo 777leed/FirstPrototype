@@ -1,6 +1,6 @@
-package com.example.firstprototype.choose
+package com.example.firstprototype
 
-/*
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,10 +14,10 @@ class choose_1 : AppCompatActivity() {
         val relativeLayout = findViewById<RelativeLayout>(R.id.lib)
         val relativeLayout1 = findViewById<RelativeLayout>(R.id.vd)
         relativeLayout.setOnClickListener{
-            startActivity(Intent ( this@choose_1, py::class.java))
+            startActivity(Intent ( this@choose_1, pyslide::class.java))
         }
         relativeLayout1.setOnClickListener{
-            startActivity(Intent ( this@choose_1, py::class.java))
+            startActivity(Intent ( this@choose_1, pyslide::class.java))
         }
     }
-}*/
+}

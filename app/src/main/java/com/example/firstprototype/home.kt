@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -21,9 +22,13 @@ class home : AppCompatActivity() {
         relativeLayout1.setOnClickListener{
             startActivity(Intent ( this@home, Categories::class.java))
         }
-        val usernameDisplay = findViewById<TextView>(R.id.homeUser)
-        val u = "PhoenixUser01"
-        usernameDisplay.text= u
+      val prof = findViewById<ImageView>(R.id.profilepic)
+    prof.setOnClickListener{
+    startActivity(Intent ( this@home,profil::class.java))
+}
+//        val usernameDisplay = findViewById<TextView>(R.id.homeUser)
+//        val u = "PhoenixUser01"
+//        usernameDisplay.text= u
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val navView = findViewById<NavigationView>(R.id.navView)
         /*toggle = findViewById<Button>(R.id.userIcon)*/

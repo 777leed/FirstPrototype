@@ -43,13 +43,14 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="380dp"
+                android:layout_width="360dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/listback" />
@@ -84,12 +85,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="380dp"
+                android:layout_width="360dp"
                 android:layout_height="100dp"
                 android:background="@drawable/lisback2" />
 
@@ -123,12 +125,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="380dp"
+                android:layout_width="360dp"
                 android:layout_height="100dp"
                 android:background="@drawable/listback" />
 
@@ -162,12 +165,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="380dp"
+                android:layout_width="360dp"
                 android:layout_height="100dp"
                 android:background="@drawable/cv4" />
 

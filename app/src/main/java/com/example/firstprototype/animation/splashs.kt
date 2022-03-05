@@ -8,20 +8,18 @@ import android.view.WindowManager
 import com.example.firstprototype.R
 import com.example.firstprototype.User.MainActivity
 
-class splash : AppCompatActivity() {
+class splashs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_splashs)
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this@splashs, MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)
