@@ -9,7 +9,7 @@ import androidx.core.view.isVisible
 import com.example.firstprototype.R
 import com.ramotion.fluidslider.FluidSlider
 
-class fm : AppCompatActivity() {
+class Fm : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fm)

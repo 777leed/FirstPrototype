@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstPrototype">
         <activity
+            android:name=".Feed"
+            android:exported="false" />
+        <activity
             android:name=".cslide"
             android:exported="false" />
         <activity
@@ -33,9 +36,7 @@
         <activity
             android:name=".pyslide"
             android:exported="false" />
-        <activity
-            android:name=".lists.list8"
-            android:exported="false" />
+
         <activity
             android:name=".lists.list7"
             android:exported="false" />
@@ -76,11 +77,12 @@
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".User.fm"
+            android:name=".User.Fm"
             android:exported="false" />
         <activity
-            android:name=".signup"
+            android:name=".Signup"
             android:exported="false" />
+        <activity android:name=".create_post" />
         <activity
             android:name=".choose.Categories"
             android:exported="false" />

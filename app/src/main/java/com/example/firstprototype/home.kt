@@ -21,8 +21,12 @@ class home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val relativeLayout1 = findViewById<RelativeLayout>(R.id.lessons)
+        val relativeLayout2 = findViewById<RelativeLayout>(R.id.codewar)
         relativeLayout1.setOnClickListener{
             startActivity(Intent ( this@home, Categories::class.java))
+        }
+        relativeLayout2.setOnClickListener{
+            startActivity(Intent ( this@home, Feed::class.java))
         }
       val prof = findViewById<ImageView>(R.id.profilepic)
     prof.setOnClickListener{
@@ -40,11 +44,14 @@ class home : AppCompatActivity() {
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         navView.setNavigationItemSelectedListener {
+//            Toast.makeText(applicationContext,
+//                "Clicked Item 2", Toast.LENGTH_SHORT).show()
             when(it.itemId){
                 R.id.item1 -> Toast.makeText(applicationContext,
                     "Clicked Item 1", Toast.LENGTH_SHORT).show()
-                R.id.item2 -> Toast.makeText(applicationContext,
-                    "Clicked Item 2", Toast.LENGTH_SHORT).show()
+                R.id.item2 ->
+                    startActivity(Intent(this,Feed::class.java))
+
                 R.id.item3 -> Toast.makeText(applicationContext,
                     "Clicked Item 3", Toast.LENGTH_SHORT).show()
             }

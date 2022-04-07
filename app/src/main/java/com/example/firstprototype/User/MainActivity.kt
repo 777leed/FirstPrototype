@@ -9,6 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firstprototype.*
+import com.example.firstprototype.daos.UserDao
+import com.example.firstprototype.models.User
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val btn_login = findViewById<Button>(R.id.btnSignin)
 
         textView.setOnClickListener{
-            startActivity(Intent ( this@MainActivity, signup::class.java))
+            startActivity(Intent ( this@MainActivity, Signup::class.java))
         }
         fpass.setOnClickListener{
             startActivity(Intent ( this@MainActivity, forgotPassword::class.java))
@@ -84,6 +86,9 @@ class MainActivity : AppCompatActivity() {
 
         if (currentUser != null) {
             if(currentUser.isEmailVerified) {
+                val user= User(currentUser.uid, currentUser.displayName, currentUser.photoUrl.toString())
+                val usersDao= UserDao()
+                usersDao.addUser(user)
                 startActivity(Intent(this, home::class.java))
                 finish()
 

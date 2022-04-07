@@ -22,7 +22,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
-class signup : AppCompatActivity() {
+class Signup : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,12 +48,12 @@ class signup : AppCompatActivity() {
                 try {
                     user.updateProfile(profileUpdates).await()
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@signup, "Successfully updated profile",
+                        Toast.makeText(this@Signup, "Successfully updated profile",
                             Toast.LENGTH_LONG).show()
                     }
                 } catch(e: Exception) {
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@signup, e.message, Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@Signup, e.message, Toast.LENGTH_LONG).show()
                     }
                 }
 
@@ -106,7 +106,7 @@ class signup : AppCompatActivity() {
                             }
                         }
                     user?.sendEmailVerification()
-                        ?.addOnCompleteListener { task ->
+                        .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
                                 val u = hashMapOf(
                                     "username" to username.text.toString(),
@@ -114,7 +114,7 @@ class signup : AppCompatActivity() {
 
 
                                 )
-// Add a new document with a generated ID
+                // Add a new document with a generated ID
                                 db.collection("users")
                                     .add(u)
                                     .addOnSuccessListener { documentReference ->
