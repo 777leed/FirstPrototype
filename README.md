@@ -6,3 +6,5 @@ What does our application provide?
 - Quizzes: Quizzes give the user the chance to test his knowledge.
 - Community: A community of programmers who share their achievements, help and questions.
 
+# Preview
+![Mon projet](https://user-images.githubusercontent.com/86270022/196372262-9b6dc69c-0f74-420d-b2db-4526e0102cbd.png)
